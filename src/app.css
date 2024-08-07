@@ -82,8 +82,10 @@ nav {
 
 .us {
     display: flex;
+    position: relative;
     align-content: center;
     padding: 30px;
+    height: 50%;
 }
 
 .us h2 {
@@ -91,10 +93,13 @@ nav {
     font-size: 3.25rem;
     position: absolute;
     z-index: 100;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10%;
 }
 
 .us img {
-    width: 30%;
+    height: 100%;
     position: absolute;
     right: 10%;
     opacity: 0.60;
@@ -114,4 +119,18 @@ nav {
 .us img:hover {
     animation: fadeIn 0.3s;
     animation-fill-mode: forwards;
+}
+
+.offers {
+    height: 100vh;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.paragraph {
+    position: absolute;
+    width: auto;
 }
