@@ -1,0 +1,117 @@
+@font-face {
+    font-family: futura;
+    src: url('/fonts/futura-medium.ttf');
+}
+
+@font-face {
+    font-family: futura;
+    font-weight: lighter;
+    src: url('/fonts/futura-light.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'futura';
+    width: 100vw;
+    height: 100vh;
+    background-color: #F0F8CF;
+}
+
+h1 {
+    font-size: 2.75rem;
+    text-align: center;
+}
+
+button {
+    background-color: #1E2B07;
+    color: #F0F8CF;
+    border: 0px;
+    padding: 10px 20px;
+}
+
+button:hover {
+    background-color: #3d4e19;
+}
+
+nav {
+    width: 30%;
+    height: 50px;
+    border-radius: 1000px;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.hero {
+    width: 100vw;
+    height: 100vh;
+
+    /* For the gradient Background */
+    background: url(gradient.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    /* Center all the Items */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero h1 {
+    margin: 20px;
+}
+
+.hero button {
+    font-size: 1rem;
+    padding: 10px 30px;
+}
+
+.us {
+    display: flex;
+    align-content: center;
+    padding: 30px;
+}
+
+.us h2 {
+    font-weight: lighter;
+    font-size: 3.25rem;
+    position: absolute;
+    z-index: 100;
+}
+
+.us img {
+    width: 30%;
+    position: absolute;
+    right: 10%;
+    opacity: 0.60;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+        z-index: 101;
+    }
+}
+
+.us img:hover {
+    animation: fadeIn 0.3s;
+    animation-fill-mode: forwards;
+}
