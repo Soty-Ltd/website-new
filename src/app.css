@@ -48,6 +48,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 10000;
 
     background: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(7.5px);
@@ -85,7 +86,7 @@ nav {
     position: relative;
     align-content: center;
     padding: 30px;
-    height: 50%;
+    height: 60%;
 }
 
 .us h2 {
@@ -99,7 +100,7 @@ nav {
 }
 
 .us img {
-    height: 100%;
+    height: 80%;
     position: absolute;
     right: 10%;
     opacity: 0.60;
@@ -128,6 +129,7 @@ nav {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: #F9FCE9;
 }
 
 .paragraph {

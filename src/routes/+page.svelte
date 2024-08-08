@@ -54,7 +54,8 @@
 		<!-- Use inline style to set random positions within the section -->
 		<div
 			class="paragraph"
-			style="top: {getRandomPosition[index].y}%; left: {getRandomPosition[index].x}%;"
+			style="top: {getRandomPosition(index).x}%; left: {getRandomPosition(index)
+				.x}%; position: absolute;"
 		>
 			{paragraph}
 		</div>
