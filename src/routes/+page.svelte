@@ -70,6 +70,7 @@
 
 <section class="offers">
 	<h1>What we Offer</h1>
+
 	{#each paragraphs as paragraph, index}
 		<!-- Use inline style to set random positions within the section -->
 		<div
@@ -83,8 +84,9 @@
 </section>
 <section class="datacenters">
 	<h1>All of our Datacenters and <br /> probaly one for you</h1>
+
 	<div class="locations">
-		<div>London, UK <br /> {getServerPing()}ms</div>
+		<div>London, UK <br /> {getServerPing()}ms <small>*1</small></div>
 		<div>Frankfurt, Germany <br /> {getServerPing()}ms</div>
 		<div>New York, USA <br /> {getServerPing()}ms</div>
 		<div>Stockholm, Sweden <br /> {getServerPing()}ms</div>
@@ -98,22 +100,67 @@
 		<div class="product">
 			<h2>VPS</h2>
 			<h3>Starting at 4.59$</h3>
-			<button>-></button>
+			<button id="productBTN">-></button>
 		</div>
 		<div class="product">
-			<h2>VPS</h2>
+			<h2>Storage</h2>
 			<h3>Starting at 4.59$</h3>
-			<button>-></button>
+			<button id="productBTN">-></button>
 		</div>
 		<div class="product">
-			<h2>VPS</h2>
+			<h2>VPNs</h2>
 			<h3>Starting at 4.59$</h3>
-			<button>-></button>
+			<button id="productBTN">-></button>
 		</div>
 	</div>
 </section>
 <section class="data_delivered">
-	<h2>We delivered over</h2>
-	<h1>{dataTB.toLocaleString()} Gigabyte</h1>
-	<h2>of Data</h2>
+	<div>
+		<h2 id="data">We delivered over</h2>
+		<h1 id="dataDel">{dataTB.toLocaleString()} Gigabyte</h1>
+		<div style="display: flex;">
+			<h2 id="data">of Data</h2>
+			<small>*2</small>
+		</div>
+	</div>
 </section>
+
+<footer>
+	<div class="dividerFooter">
+		<div>
+			<div style="display: flex;">
+				<img src="logo.png" width="40px" alt="" />
+				<h2 style="margin: 0 10px;">Soty Ltd.</h2>
+			</div>
+			<div style="display: flex; margin: 20px 0">
+				<button id="footerBTN">Try Soty</button>
+				<button id="footerBTN" class="demo">Watch Demo</button>
+			</div>
+		</div>
+		<div>
+			<ul>
+				<li>
+					<a href="@">Plans & Prices</a>
+				</li>
+				<li>
+					<a href="@">Features</a>
+				</li>
+				<li>
+					<a href="@">News & Blogs</a>
+				</li>
+				<li>
+					<a href="@">Careers</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<hr />
+	<div style="display: flex; justify-content:space-between;">
+		<p>© 2024 Soty Ltd. All rights reserved</p>
+		<p>Terms of Service</p>
+	</div>
+	<!-- <br />
+	<small>*1 The ping to the servers are not accurate and randomly generated</small>
+	<br />
+	<small>*2 The data of the data we delivered via our Services may not be accurate.</small> -->
+</footer>
