@@ -40,14 +40,44 @@
 		return ping_round;
 	}
 
-	let dataTB = 514518400;
+	let dataTB = 0;
 
 	function addNumber() {
 		dataTB = dataTB + 10;
-		console.log('hey');
 	}
 
 	const interval = setInterval(addNumber, 10);
+
+	import { onMount } from 'svelte';
+
+	let scrollContainer;
+	let scrollContainer1;
+	let scrollContainer2;
+	onMount(() => {
+		const handleScroll = () => {
+			const scrollY = window.scrollY;
+
+			if (scrollContainer) {
+				if (scrollY > 400) {
+					// Start scrolling horizontally only after scrolling down 400px
+					scrollContainer.scrollLeft = (scrollY - 900) * 0.2; // Adjust multiplier as needed
+					scrollContainer1.scrollLeft = (scrollY - 950) * 0.2; // Adjust multiplier as needed
+					scrollContainer2.scrollLeft = (scrollY - 1000) * 0.2; // Adjust multiplier as needed
+				} else {
+					scrollContainer.scrollLeft = 0; // Ensure horizontal scroll is reset when above 400px
+					scrollContainer1.scrollLeft = 0; // Ensure horizontal scroll is reset when above 400px
+					scrollContainer2.scrollLeft = 0; // Ensure horizontal scroll is reset when above 400px
+				}
+			}
+		};
+
+		window.addEventListener('scroll', handleScroll);
+
+		// Cleanup event listener when component is destroyed
+		return () => {
+			window.removeEventListener('scroll', handleScroll);
+		};
+	});
 </script>
 
 <nav>
@@ -70,9 +100,61 @@
 
 <section class="offers">
 	<h1>What we Offer</h1>
+	<div class="test1" bind:this={scrollContainer}>
+		<h2 style="font-weight: 500;">Cloud Computing Models</h2>
+		<h2>Hybrid Cloud</h2>
+		<h2>VPS (Virtual Private Server)</h2>
+		<h2>Private Cloud</h2>
+		<h2>Multi-cloud</h2>
+		<h2>Public Cloud</h2>
+		<h2 style="font-weight: 500;">Cloud Computing Models</h2>
+		<h2>Hybrid Cloud</h2>
+		<h2>VPS (Virtual Private Server)</h2>
+		<h2>Private Cloud</h2>
+		<h2>Multi-cloud</h2>
+		<h2>Public Cloud</h2>
+	</div>
 
-	{#each paragraphs as paragraph, index}
-		<!-- Use inline style to set random positions within the section -->
+	<div class="test1" bind:this={scrollContainer1}>
+		<h2 style="font-weight: 500;">Cloud Infrastructure and Managment</h2>
+		<h2>Cloud Storage</h2>
+		<h2>Content Delivery Network (CDN)</h2>
+		<h2>Load Balancing</h2>
+		<h2>Networking</h2>
+		<h2>High Availability</h2>
+		<h2>Scalability</h2>
+		<h2>Microservices</h2>
+		<h2>Kubernetes</h2>
+		<h2>Containers</h2>
+		<h2>Virtualization</h2>
+		<h2>Infrastructure</h2>
+		<h2>Backup</h2>
+		<h2>Edge Computing</h2>
+	</div>
+
+	<div class="test1" bind:this={scrollContainer2}>
+		<h2 style="font-weight: 500;">Cloud Services</h2>
+		<h2>APIs</h2>
+		<h2>Deployment</h2>
+		<h2>Security</h2>
+		<h2>Automation</h2>
+		<h2>DevOps</h2>
+		<h2 style="font-weight: 500;">Cloud Services</h2>
+		<h2>APIs</h2>
+		<h2>Deployment</h2>
+		<h2>Security</h2>
+		<h2>Automation</h2>
+		<h2>DevOps</h2>
+		<h2 style="font-weight: 500;">Cloud Services</h2>
+		<h2>APIs</h2>
+		<h2>Deployment</h2>
+		<h2>Security</h2>
+		<h2>Automation</h2>
+		<h2>DevOps</h2>
+	</div>
+
+	<!-- {#each paragraphs as paragraph, index}
+		Use inline style to set random positions within the section
 		<div
 			class="paragraph"
 			style="top: {getRandomPosition(index).x}%; left: {getRandomPosition(index)
@@ -80,7 +162,7 @@
 		>
 			{paragraph}
 		</div>
-	{/each}
+	{/each} -->
 </section>
 <section class="datacenters">
 	<h1>All of our Datacenters and <br /> probaly one for you</h1>
@@ -119,48 +201,8 @@
 		<h2 id="data">We delivered over</h2>
 		<h1 id="dataDel">{dataTB.toLocaleString()} Gigabyte</h1>
 		<div style="display: flex;">
-			<h2 id="data">of Data</h2>
+			<h2 id="data">of Data since you opened our Website</h2>
 			<small>*2</small>
 		</div>
 	</div>
 </section>
-
-<footer>
-	<div class="dividerFooter">
-		<div>
-			<div style="display: flex;">
-				<img src="logo.png" width="40px" alt="" />
-				<h2 style="margin: 0 10px;">Soty Ltd.</h2>
-			</div>
-			<div style="display: flex; margin: 20px 0">
-				<button id="footerBTN">Try Soty</button>
-				<button id="footerBTN" class="demo">Watch Demo</button>
-			</div>
-		</div>
-		<div>
-			<ul>
-				<li>
-					<a href="@">Plans & Prices</a>
-				</li>
-				<li>
-					<a href="@">Features</a>
-				</li>
-				<li>
-					<a href="@">News & Blogs</a>
-				</li>
-				<li>
-					<a href="@">Careers</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<hr />
-	<div style="display: flex; justify-content:space-between;">
-		<p>© 2024 Soty Ltd. All rights reserved</p>
-		<p>Terms of Service</p>
-	</div>
-	<!-- <br />
-	<small>*1 The ping to the servers are not accurate and randomly generated</small>
-	<br />
-	<small>*2 The data of the data we delivered via our Services may not be accurate.</small> -->
-</footer>
