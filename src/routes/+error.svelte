@@ -13,7 +13,7 @@
 			{#if (page.status = 404)}
 				We couldn't find the page you are looking for, sowwy ):
 				<br />
-				<button>Go Back Home</button>
+				<button on:click={() => location.replace('/')}>Go Back Home</button>
 			{/if}
 		</h3>
 	</div>

@@ -1,38 +1,42 @@
 <div class="heroNews">
 	<div style="margin: 30px; ">
 		<h2>Newsroom</h2>
+		<hr />
+		<br />
 		<h1>Soty Ltd. Enhances Frankfurt <br /> Datacenter with 15 Gigabit Connection</h1>
 		<p>Boosting Performance and Reliability for Enhanced Digital Services</p>
-		<button>Read More</button>
+		<button on:click={() => location.replace('/news/article/?article=0')}>Read More</button>
 	</div>
 
 	<div class="headingImg"></div>
 </div>
 
 <main>
-	<div class="news">
-		<img src="news/hello.jpg" alt="" /><br />
-		<h2>Soty Ltd. Enhances Frankfurt <br /> Datacenter with 15 Gigabit Connection</h2>
-		<p>Boosting Performance and Reliability for Enhanced Digital Services</p>
-		<button>Read More</button>
-	</div>
-	<div class="news">
-		<img src="news/hello.jpg" alt="" /><br />
-		<h2>Soty Ltd. Enhances Frankfurt <br /> Datacenter with 15 Gigabit Connection</h2>
-		<p>Boosting Performance and Reliability for Enhanced Digital Services</p>
-		<button>Read More</button>
-	</div>
-	<div class="news">
-		<img src="news/hello.jpg" alt="" /><br />
-		<h2>Soty Ltd. Enhances Frankfurt <br /> Datacenter with 15 Gigabit Connection</h2>
-		<p>Boosting Performance and Reliability for Enhanced Digital Services</p>
-		<button>Read More</button>
-	</div>
-	<div class="news">
-		<img src="news/hello.jpg" alt="" /><br />
-		<h2>Soty Ltd. Enhances Frankfurt <br /> Datacenter with 15 Gigabit Connection</h2>
-		<p>Boosting Performance and Reliability for Enhanced Digital Services</p>
-		<button>Read More</button>
+	<div class="grid">
+		<div class="news">
+			<img src="news/hello.jpg" alt="" /><br />
+			<h2>Soty Ltd. Enhances Frankfurt <br /> Datacenter with 15 Gigabit Connection</h2>
+			<p>Boosting Performance and Reliability for Enhanced Digital Services</p>
+			<button on:click={() => location.replace('/news/article/?article=1')}>Read More</button>
+		</div>
+		<div class="news">
+			<img src="news/hello.jpg" alt="" /><br />
+			<h2>Soty Ltd. Enhances Frankfurt <br /> Datacenter with 15 Gigabit Connection</h2>
+			<p>Boosting Performance and Reliability for Enhanced Digital Services</p>
+			<button on:click={() => location.replace('/news/article/?article=2')}>Read More</button>
+		</div>
+		<div class="news">
+			<img src="news/hello.jpg" alt="" /><br />
+			<h2>Soty Ltd. Enhances Frankfurt <br /> Datacenter with 15 Gigabit Connection</h2>
+			<p>Boosting Performance and Reliability for Enhanced Digital Services</p>
+			<button on:click={() => location.replace('/news/article/?article=3')}>Read More</button>
+		</div>
+		<div class="news">
+			<img src="news/hello.jpg" alt="" /><br />
+			<h2>Soty Ltd. Enhances Frankfurt <br /> Datacenter with 15 Gigabit Connection</h2>
+			<p>Boosting Performance and Reliability for Enhanced Digital Services</p>
+			<button on:click={() => location.replace('/news/article/?article=4')}>Read More</button>
+		</div>
 	</div>
 </main>
 
@@ -48,6 +52,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		padding: 30px 0 0 0;
 	}
 
 	.headingImg {
@@ -80,18 +85,24 @@
 		background-color: #000;
 		color: #fff;
 	}
+
 	main {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.grid {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: repeat(2, 1fr);
-		padding: 30px;
 	}
 
 	.news {
 		background-color: #f9fce9;
 		width: 40vw;
-		padding: 20px;
-		margin: 0 0 2vw 0;
+		padding: 40px;
+		margin: 20px;
+		box-sizing: border-box;
 	}
 
 	.news img {
@@ -113,7 +124,7 @@
 			height: 60vw;
 		}
 
-		main {
+		.grid {
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -122,7 +133,7 @@
 
 		.news {
 			width: 80vw;
-			margin: 0 0 20px 0;
+			margin: 20px;
 		}
 	}
 </style>
