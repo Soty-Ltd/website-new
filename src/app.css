@@ -187,12 +187,14 @@ h1 {
 }
 
 .datacenters {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     width: 100vw;
     text-align: left;
-    height: 40%;
+    height: max-content;
+    box-sizing: border-box;
+    padding: 30px;
 }
 
 .datacenters h1 {

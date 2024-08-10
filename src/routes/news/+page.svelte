@@ -3,6 +3,7 @@
 		<h2>Newsroom</h2>
 		<h1>Soty Ltd. Enhances Frankfurt <br /> Datacenter with 15 Gigabit Connection</h1>
 		<p>Boosting Performance and Reliability for Enhanced Digital Services</p>
+		<button>Read More</button>
 	</div>
 
 	<div class="headingImg"></div>
@@ -90,6 +91,7 @@
 		background-color: #f9fce9;
 		width: 40vw;
 		padding: 20px;
+		margin: 0 0 2vw 0;
 	}
 
 	.news img {

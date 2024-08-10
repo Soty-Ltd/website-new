@@ -60,9 +60,9 @@
 			if (scrollContainer) {
 				if (scrollY > 400) {
 					// Start scrolling horizontally only after scrolling down 400px
-					scrollContainer.scrollLeft = (scrollY - 900) * 0.2; // Adjust multiplier as needed
-					scrollContainer1.scrollLeft = (scrollY - 950) * 0.2; // Adjust multiplier as needed
-					scrollContainer2.scrollLeft = (scrollY - 1000) * 0.2; // Adjust multiplier as needed
+					scrollContainer.scrollLeft = (scrollY - 800) * 0.2; // Adjust multiplier as needed
+					scrollContainer1.scrollLeft = (scrollY - 850) * 0.2; // Adjust multiplier as needed
+					scrollContainer2.scrollLeft = (scrollY - 900) * 0.2; // Adjust multiplier as needed
 				} else {
 					scrollContainer.scrollLeft = 0; // Ensure horizontal scroll is reset when above 400px
 					scrollContainer1.scrollLeft = 0; // Ensure horizontal scroll is reset when above 400px
