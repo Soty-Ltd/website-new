@@ -14,25 +14,25 @@
 <main>
 	<div class="grid">
 		<div class="news">
-			<img src="news/hello.jpg" alt="" /><br />
+			<img src="news/hello.webp" alt="" /><br />
 			<h2>Soty Ltd. Enhances Frankfurt <br /> Datacenter with 15 Gigabit Connection</h2>
 			<p>Boosting Performance and Reliability for Enhanced Digital Services</p>
 			<button on:click={() => location.replace('/news/article/?article=1')}>Read More</button>
 		</div>
 		<div class="news">
-			<img src="news/hello.jpg" alt="" /><br />
+			<img src="news/hello.webp" alt="" /><br />
 			<h2>Soty Ltd. Enhances Frankfurt <br /> Datacenter with 15 Gigabit Connection</h2>
 			<p>Boosting Performance and Reliability for Enhanced Digital Services</p>
 			<button on:click={() => location.replace('/news/article/?article=2')}>Read More</button>
 		</div>
 		<div class="news">
-			<img src="news/hello.jpg" alt="" /><br />
+			<img src="news/hello.webp" alt="" /><br />
 			<h2>Soty Ltd. Enhances Frankfurt <br /> Datacenter with 15 Gigabit Connection</h2>
 			<p>Boosting Performance and Reliability for Enhanced Digital Services</p>
 			<button on:click={() => location.replace('/news/article/?article=3')}>Read More</button>
 		</div>
 		<div class="news">
-			<img src="news/hello.jpg" alt="" /><br />
+			<img src="news/hello.webp" alt="" /><br />
 			<h2>Soty Ltd. Enhances Frankfurt <br /> Datacenter with 15 Gigabit Connection</h2>
 			<p>Boosting Performance and Reliability for Enhanced Digital Services</p>
 			<button on:click={() => location.replace('/news/article/?article=4')}>Read More</button>
@@ -56,7 +56,7 @@
 	}
 
 	.headingImg {
-		background: url('news/servers.jpg') center;
+		background: url('/news/servers.webp') center;
 		background-size: cover;
 		height: 80vh;
 		width: 50vw;

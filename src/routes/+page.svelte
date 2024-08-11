@@ -81,7 +81,7 @@
 </script>
 
 <nav>
-	<img src="logo.png" alt="" width="10%" />
+	<img src="logo.webp" alt="" width="10%" />
 	<ul>
 		<li><a href="#">hello</a></li>
 	</ul>
@@ -95,7 +95,7 @@
 		We are a Company from the United Kingdom <br /> that provides you with the perfect Servers
 		<br /> to get you started for your Project
 	</h2>
-	<img src="northshields.jpg" alt="" />
+	<img src="northshields.webp" alt="" />
 </section>
 
 <section class="offers">
