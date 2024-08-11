@@ -72,7 +72,7 @@ nav {
     height: 100vh;
 
     /* For the gradient Background */
-    background: url('./gradient.jpg') no-repeat;
+    background: url('/gradient.jpg') no-repeat;
     background-size: cover;
     background-position: center;
 
