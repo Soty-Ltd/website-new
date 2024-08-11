@@ -85,10 +85,7 @@
 	<button>Learn More</button>
 </section>
 <section class="us">
-	<h2>
-		We are a Company from the United Kingdom <br /> that provides you with the perfect Servers
-		<br /> to get you started for your Project
-	</h2>
+	<h2>We are a UK-based company offering top-tier servers to kickstart your project.</h2>
 	<img src="northshields.webp" alt="" />
 </section>
 
