@@ -1,0 +1,131 @@
+<script>
+	// console.log(document.querySelector('h1').offsetWidth);
+</script>
+
+<main>
+	<div class="data">
+		<a id="back" href="/"
+			><svg
+				xmlns="http://www.w3.org/2000/svg"
+				height="24px"
+				viewBox="0 -960 960 960"
+				width="24px"
+				fill="#000"
+				><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" /></svg
+			> Home</a
+		>
+		<h1>Sign Up</h1>
+		<h3>Start your journey with us right now.</h3>
+		<br />
+
+		<!-- Sign in per E-Mail -->
+		<div>
+			<label for="">Email</label>
+			<br />
+			<input type="text" placeholder="john@doe.com" />
+		</div>
+		<div style="margin: 10px 0 0 0;">
+			<label for="">Password</label>
+			<br />
+			<input type="password" placeholder="" />
+		</div>
+		<button>Sign Up</button>
+
+		<div class="divider">
+			<div class="divide"></div>
+			<p>Or</p>
+			<div class="divide"></div>
+		</div>
+	</div>
+
+	<div class="info"></div>
+</main>
+
+<style>
+	main {
+		display: flex;
+		height: 100vh;
+		width: 100vw;
+		padding: 30px;
+		box-sizing: border-box;
+	}
+
+	.data {
+		width: 40vw;
+		padding: 40px;
+	}
+
+	.info {
+		width: 60vw;
+		border-radius: 10px;
+		background: url('/signup.jpg') center;
+		background-size: cover;
+	}
+
+	h1 {
+		text-align: left;
+		font-weight: 600;
+		font-size: 2.25rem;
+	}
+
+	h3 {
+		font-weight: 400;
+		font-size: 1.25rem;
+	}
+	input {
+		width: 70%;
+		border: 1px solid black;
+		background: none;
+		border-radius: 5px;
+		padding: 10px 20px 10px 15px;
+		font-size: 1rem;
+		margin: 5px 0 0 0;
+	}
+	button {
+		width: 70%;
+		border-radius: 5px;
+		padding: 10px 20px 10px 15px;
+		font-size: 1rem;
+		margin: 15px 0 0 0;
+		border: 1px solid black;
+		box-sizing: content-box;
+	}
+
+	.divider {
+		display: flex;
+		align-items: center;
+		width: 70%;
+		box-sizing: content-box;
+	}
+
+	.divider p {
+		margin: 20px;
+	}
+
+	.divide {
+		border: 1px solid black;
+		width: 100%;
+		height: 0px;
+	}
+
+	#back {
+		display: flex;
+		align-items: center;
+	}
+
+	@media screen and (max-width: 700px) {
+		main {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.info {
+			display: none;
+		}
+
+		.data {
+			width: 80vw;
+		}
+	}
+</style>
