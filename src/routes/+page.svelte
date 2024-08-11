@@ -80,12 +80,6 @@
 	});
 </script>
 
-<nav>
-	<img src="logo.webp" alt="" width="10%" />
-	<ul>
-		<li><a href="#">hello</a></li>
-	</ul>
-</nav>
 <section class="hero">
 	<h1>We turn your on-premises applications <br /> into a dynamic cloud solution in seconds.</h1>
 	<button>Learn More</button>
