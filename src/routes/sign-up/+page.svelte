@@ -1,5 +1,11 @@
 <script>
-	// console.log(document.querySelector('h1').offsetWidth);
+	function sso() {
+		alert('Single Sign On currently not available');
+	}
+
+	function signup() {
+		window.location.replace('sign-up/next-steps');
+	}
 </script>
 
 <main>
@@ -17,7 +23,14 @@
 		<h1>Sign Up</h1>
 		<h3>Start your journey with us right now.</h3>
 		<br />
-
+		<!-- SSO Sign in -->
+		<button class="sso" on:click={() => sso()}>Sign in with Google</button>
+		<button class="sso" on:click={() => sso()}>Sign in with GitHub</button>
+		<div class="divider">
+			<div class="divide"></div>
+			<p>Or</p>
+			<div class="divide"></div>
+		</div>
 		<!-- Sign in per E-Mail -->
 		<div>
 			<label for="">Email</label>
@@ -27,15 +40,9 @@
 		<div style="margin: 10px 0 0 0;">
 			<label for="">Password</label>
 			<br />
-			<input type="password" placeholder="" />
+			<input type="password" placeholder="" id="pw" />
 		</div>
-		<button>Sign Up</button>
-
-		<div class="divider">
-			<div class="divide"></div>
-			<p>Or</p>
-			<div class="divide"></div>
-		</div>
+		<button on:click={() => signup()}>Sign Up</button>
 	</div>
 
 	<div class="info"></div>
@@ -58,7 +65,7 @@
 	.info {
 		width: 60vw;
 		border-radius: 10px;
-		background: url('/signup.jpg') center;
+		background: url('/signup.webp') center;
 		background-size: cover;
 	}
 
@@ -94,7 +101,7 @@
 	.divider {
 		display: flex;
 		align-items: center;
-		width: 70%;
+		width: calc(70% + 35px);
 		box-sizing: content-box;
 	}
 
@@ -111,6 +118,15 @@
 	#back {
 		display: flex;
 		align-items: center;
+	}
+
+	.sso {
+		background: none;
+		color: black;
+	}
+
+	.sso:hover {
+		background-color: #e1f1a5;
 	}
 
 	@media screen and (max-width: 700px) {

@@ -78,11 +78,27 @@
 			window.removeEventListener('scroll', handleScroll);
 		};
 	});
+
+	function signup() {
+		window.location.replace('/sign-up');
+	}
 </script>
 
+<nav>
+	<div id="logo_div">
+		<img id="logo" src="/logo.webp" alt="" />
+		<h2>Soty Ltd.</h2>
+	</div>
+
+	<ul>
+		<li><a href="/">Home</a></li>
+		<li><a href="/news">News</a></li>
+		<div class="signup_a"><li><a href="/sign-up">Sign Up</a></li></div>
+	</ul>
+</nav>
 <section class="hero">
 	<h1>We turn your on-premises applications <br /> into a dynamic cloud solution in seconds.</h1>
-	<button>Learn More</button>
+	<button on:click={() => signup()}>Sign Up</button>
 </section>
 <section class="us">
 	<h2>We are a UK-based company offering top-tier servers to kickstart your project.</h2>

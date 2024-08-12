@@ -49,22 +49,63 @@ button:hover {
 }
 
 nav {
-    width: 30%;
-    height: 50px;
-    border-radius: 1000px;
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 20px;
+    width: 100vw;
+    height: 60px;
+    background-color: #f9fce9;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    box-sizing: border-box;
+    position: fixed;
     z-index: 10000;
+    border-bottom: 1px solid black;
+}
 
-    background: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(7.5px);
-    -webkit-backdrop-filter: blur(7.5px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+#logo {
+    height: 30px;
+}
+
+#logo_div {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+#logo_div h2 {
+    margin: 0 0 0 10px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav li:hover a {
+    text-decoration: underline;
+}
+
+.signup_a {
+    background-color: #212b0d;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 2000px;
+}
+
+.signup_a:hover {
+    background: none;
+}
+
+.signup_a:hover a {
+    color: #000;
+}
+
+.signup_a a {
+    color: #f9fce9;
 }
 
 .hero {

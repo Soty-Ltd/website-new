@@ -1,3 +1,16 @@
+<!-- <nav>
+	<div id="logo_div">
+		<img id="logo" src="/logo.webp" alt="" />
+		<h2>Soty Ltd.</h2>
+	</div>
+
+	<ul>
+		<li><a href="/">Home</a></li>
+		<li><a href="/news">News</a></li>
+		<div class="signup_a"><li><a href="/sign-up">Sign Up</a></li></div>
+	</ul>
+</nav> -->
+
 <div class="heroNews">
 	<div style="margin: 30px; ">
 		<h2>Newsroom</h2>

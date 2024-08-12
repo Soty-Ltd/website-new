@@ -3,7 +3,7 @@
 </script>
 
 <section class="error">
-	<img src="sadhamster.png" alt="" width="150px" />
+	<img src="/sadhamster.png" alt="" width="150px" />
 
 	<div class="seperator"></div>
 
