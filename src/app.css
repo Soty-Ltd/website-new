@@ -48,6 +48,7 @@ button:hover {
     background-color: #3d4e19;
 }
 
+/* NAVIGATION BAR */
 nav {
     width: 100vw;
     height: 60px;
@@ -93,24 +94,6 @@ nav li:hover a {
     text-decoration: underline;
 }
 
-.mobile_nav {
-    width: 100vw;
-    height: 100vh;
-    background-color: #fafcea;
-    z-index: 100000000;
-    position: fixed;
-}
-
-@media screen and (max-width: 600px) {
-    .hamburger {
-        display: block;
-    }
-
-    nav ul {
-        display: none;
-    }
-}
-
 .signup_a {
     background-color: #212b0d;
     border: 1px solid black;
@@ -130,6 +113,42 @@ nav li:hover a {
     color: #f9fce9;
 }
 
+/* MOBILE NAVIGATION BAR */
+
+.mobile_nav {
+    width: 100vw;
+    height: 100vh;
+    background-color: #fafcea;
+    z-index: 100000000;
+    position: fixed;
+    padding: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.mobile_nav li {
+    margin: 15px;
+}
+
+@media screen and (max-width: 600px) {
+    .hamburger {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+    }
+}
+
+.mobile_nav .signup_a {
+    padding: 5px 20px;
+}
+
+/* HERO */
 .hero {
     width: 100vw;
     height: 100vh;
