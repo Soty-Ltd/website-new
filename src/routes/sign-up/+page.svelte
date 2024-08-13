@@ -141,7 +141,17 @@
 		}
 
 		.data {
-			width: 80vw;
+			width: 100vw;
+		}
+
+		button,
+		input {
+			width: 100%;
+			box-sizing: border-box;
+		}
+
+		.divider {
+			width: 100%;
 		}
 	}
 </style>
