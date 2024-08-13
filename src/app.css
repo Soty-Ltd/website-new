@@ -76,6 +76,10 @@ nav {
     margin: 0 0 0 10px;
 }
 
+.hamburger {
+    display: none;
+}
+
 nav ul {
     display: flex;
     align-items: center;
@@ -87,6 +91,24 @@ nav li {
 
 nav li:hover a {
     text-decoration: underline;
+}
+
+.mobile_nav {
+    width: 100vw;
+    height: 100vh;
+    background-color: #fafcea;
+    z-index: 100000000;
+    position: fixed;
+}
+
+@media screen and (max-width: 600px) {
+    .hamburger {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+    }
 }
 
 .signup_a {

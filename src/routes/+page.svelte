@@ -82,6 +82,14 @@
 	function signup() {
 		window.location.replace('/sign-up');
 	}
+	let nav = 'none';
+	function mobileNav() {
+		if ((nav = 'none')) {
+			nav = 'block';
+		} else {
+			nav = 'none';
+		}
+	}
 </script>
 
 <nav>
@@ -90,12 +98,31 @@
 		<h2>Soty Ltd.</h2>
 	</div>
 
+	<div on:click={() => mobileNav()}>
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			height="30px"
+			viewBox="0 -960 960 960"
+			width="30px"
+			class="hamburger"
+			fill="#000"
+			><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" /></svg
+		>
+	</div>
+
 	<ul>
 		<li><a href="/">Home</a></li>
 		<li><a href="/news">News</a></li>
 		<div class="signup_a"><li><a href="/sign-up">Sign Up</a></li></div>
 	</ul>
 </nav>
+<div class="mobile_nav" style="display: {nav};">
+	<ul>
+		<li><a href="/">Home</a></li>
+		<li><a href="/news">News</a></li>
+		<div class="signup_a"><li><a href="/sign-up">Sign Up</a></li></div>
+	</ul>
+</div>
 <section class="hero">
 	<h1>We turn your on-premises applications <br /> into a dynamic cloud solution in seconds.</h1>
 	<button on:click={() => signup()}>Sign Up</button>
