@@ -255,14 +255,6 @@
 		padding: 30px;
 	}
 
-	.head {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column;
-		margin: 100px 0;
-	}
-
 	.updated {
 		color: #4a5567;
 	}

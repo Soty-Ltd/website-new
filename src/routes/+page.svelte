@@ -113,6 +113,7 @@
 	<ul>
 		<li><a href="/">Home</a></li>
 		<li><a href="/news">News</a></li>
+
 		<div class="signup_a"><li><a href="/sign-up">Sign Up</a></li></div>
 	</ul>
 </nav>
