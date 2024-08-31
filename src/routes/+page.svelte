@@ -1,4 +1,5 @@
 <script>
+	import SEO from '$lib/components/SEO.svelte';
 	// Array of paragraph texts
 	const paragraphs = [
 		'Private Cloud',
@@ -49,6 +50,7 @@
 	const interval = setInterval(addNumber, 10);
 
 	import { onMount } from 'svelte';
+	import Seo from '../lib/components/SEO.svelte';
 
 	let scrollContainer;
 	let scrollContainer1;
@@ -92,6 +94,11 @@
 	}
 </script>
 
+<SEO
+	title={'Home'}
+	description={'Soty Ltd. - Leading Cloud Computing Solutions. Enhance your business efficiency with our secure, scalable, and innovative cloud services. Discover our cloud infrastructure, storage, and AI-powered solutions designed for businesses of all sizes.'}
+	image={'s'}
+/>
 <nav>
 	<div id="logo_div">
 		<img id="logo" src="/logo.webp" alt="" />
@@ -136,6 +143,7 @@
 	<ul>
 		<li><a href="/">Home</a></li>
 		<li><a href="/news">News</a></li>
+		<li><a href="/team">Team</a></li>
 		<div class="signup_a"><li><a href="/sign-up">Sign Up</a></li></div>
 	</ul>
 </div>

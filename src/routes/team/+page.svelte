@@ -1,58 +1,198 @@
 <script>
+	import SEO from '$lib/components/SEO.svelte';
+	let nav = 'none';
+	function mobileNav() {
+		if (nav == 'none') {
+			nav = 'flex';
+		} else {
+			nav = 'none';
+		}
+	}
 	const employees = [
-		{ name: 'Oliver Thorns', id: 'thorns', job: 'Chief Executive Officer', group: 'executive' },
+		{
+			name: 'Oliver Thorns',
+			id: 'thorns',
+			job: 'Chief Executive Officer',
+			group: 'executive',
+			color: '#F8CFCF'
+		},
 		{
 			name: 'Samantha Hartley',
 			id: 'hartley',
 			job: 'Chief Technology Officer',
-			group: 'executive'
+			group: 'executive',
+			color: '#EACFF8'
 		},
-		{ name: 'Ethan Brooks', id: 'brooks', job: 'Chief Financial Officer', group: 'executive' },
-		{ name: 'Maya Patel', id: 'patel', job: 'Chief Marketing Officer', group: 'executive' },
+		{
+			name: 'Ethan Brooks',
+			id: 'brooks',
+			job: 'Chief Financial Officer',
+			group: 'executive',
+			color: '#CFDAF8'
+		},
+		{
+			name: 'Maya Patel',
+			id: 'patel',
+			job: 'Chief Marketing Officer',
+			group: 'executive',
+			color: '#CFF8DF'
+		},
 		{
 			name: 'Liam Reed',
 			id: 'reed',
 			job: 'Head of Cloud Infrastructure',
-			group: 'engineering'
+			group: 'engineering',
+			color: '#F8CFCF'
 		},
-		{ name: 'Ava Gomez', id: 'gomez', job: 'Lead Software Engineer', group: 'engineering' },
-		{ name: 'Noah Clark', id: 'clark', job: 'Senior DevOps Engineer', group: 'engineering' },
+		{
+			name: 'Ava Gomez',
+			id: 'gomez',
+			job: 'Lead Software Engineer',
+			group: 'engineering',
+			color: '#EACFF8'
+		},
+		{
+			name: 'Noah Clark',
+			id: 'clark',
+			job: 'Senior DevOps Engineer',
+			group: 'engineering',
+			color: '#CFDAF8'
+		},
 		{
 			name: 'Sophia Johnson',
 			id: 'johnson',
 			job: 'Cloud Solutions Architect',
-			group: 'engineering'
+			group: 'engineering',
+			color: '#CFF8DF'
 		},
-		{ name: 'Jackson Lee', id: 'lee', job: 'Director of Customer Success', group: 'support' },
+		{
+			name: 'Jackson Lee',
+			id: 'lee',
+			job: 'Director of Customer Success',
+			group: 'support',
+			color: '#F8CFCF'
+		},
 		{
 			name: 'Emily Thompson',
 			id: 'thompson',
 			job: 'Cloud Security Specialist',
-			group: 'engineering'
+			group: 'engineering',
+			color: '#EACFF8'
 		},
-		{ name: 'James Miller', id: 'miller', job: 'Data Scientist', group: 'engineering' },
-		{ name: 'Olivia Davis', id: 'davis', job: 'Product Manager', group: 'product' },
-		{ name: 'Benjamin Taylor', id: 'taylor', job: 'Technical Support Lead', group: 'support' },
-		{ name: 'Charlotte Wilson', id: 'wilson', job: 'UX/UI Designer', group: 'design' },
+		{
+			name: 'James Miller',
+			id: 'miller',
+			job: 'Data Scientist',
+			group: 'engineering',
+			color: '#CFDAF8'
+		},
+		{
+			name: 'Olivia Davis',
+			id: 'davis',
+			job: 'Product Manager',
+			group: 'product',
+			color: '#CFF8DF'
+		},
+		{
+			name: 'Benjamin Taylor',
+			id: 'taylor',
+			job: 'Technical Support Lead',
+			group: 'support',
+			color: '#F8CFCF'
+		},
+		{
+			name: 'Charlotte Wilson',
+			id: 'wilson',
+			job: 'UX/UI Designer',
+			group: 'design',
+			color: '#EACFF8'
+		},
 		{
 			name: 'Michael Anderson',
 			id: 'anderson',
 			job: 'Cloud Systems Administrator',
-			group: 'engineering'
+			group: 'engineering',
+			color: '#CFDAF8'
 		},
-		{ name: 'Isabella Martinez', id: 'martinez', job: 'Sales Manager', group: 'sales' },
-		{ name: 'Alexander King', id: 'king', job: 'Business Development Executive', group: 'sales' },
-		{ name: 'Amelia White', id: 'white', job: 'QA Engineer', group: 'engineering' },
-		{ name: 'Lucas Brown', id: 'brown', job: 'Network Engineer', group: 'engineering' },
-		{ name: 'Grace Walker', id: 'walker', job: 'HR Manager', group: 'hr' },
-		{ name: 'Daniel Evans', id: 'evans', job: 'Marketing Specialist', group: 'marketing' },
-		{ name: 'Harper Moore', id: 'moore', job: 'Systems Analyst', group: 'engineering' },
-		{ name: 'Ella Harris', id: 'harris', job: 'Administrative Assistant', group: 'admin' },
-		{ name: 'Sebastian Lewis', id: 'lewis', job: 'Software Developer', group: 'engineering' },
-		{ name: 'Zoe Young', id: 'young', job: 'Customer Support Specialist', group: 'support' }
+		{
+			name: 'Isabella Martinez',
+			id: 'martinez',
+			job: 'Sales Manager',
+			group: 'sales',
+			color: '#CFF8DF'
+		},
+		{
+			name: 'Alexander King',
+			id: 'king',
+			job: 'Business Development Executive',
+			group: 'sales',
+			color: '#F8CFCF'
+		},
+		{
+			name: 'Amelia White',
+			id: 'white',
+			job: 'QA Engineer',
+			group: 'engineering',
+			color: '#EACFF8'
+		},
+		{
+			name: 'Lucas Brown',
+			id: 'brown',
+			job: 'Network Engineer',
+			group: 'engineering',
+			color: '#CFDAF8'
+		},
+		{ name: 'Grace Walker', id: 'walker', job: 'HR Manager', group: 'hr', color: '#CFF8DF' },
+		{
+			name: 'Daniel Evans',
+			id: 'evans',
+			job: 'Marketing Specialist',
+			group: 'marketing',
+			color: '#F8CFCF'
+		},
+		{
+			name: 'Harper Moore',
+			id: 'moore',
+			job: 'Systems Analyst',
+			group: 'engineering',
+			color: '#EACFF8'
+		},
+		{
+			name: 'Ella Harris',
+			id: 'harris',
+			job: 'Administrative Assistant',
+			group: 'admin',
+			color: '#CFDAF8'
+		},
+		{
+			name: 'Sebastian Lewis',
+			id: 'lewis',
+			job: 'Software Developer',
+			group: 'engineering',
+			color: '#CFF8DF'
+		},
+		{
+			name: 'Zoe Young',
+			id: 'young',
+			job: 'Customer Support Specialist',
+			group: 'support',
+			color: '#F8CFCF'
+		}
+		// {
+		// 	name: 'This could be you',
+		// 	id: 'you',
+		// 	job: 'Apply now',
+		// 	group: 'apply',
+		// 	color: '#CFF8DF'
+		// }
 	];
 </script>
 
+<SEO
+	title={'Team'}
+	description={'Discover the talented team behind Soty, leaders in cloud computing. Meet our executives, engineers, and support staff who drive innovation and excellence. Learn more about our skilled professionals and their roles.'}
+	image={'s'}
+/>
 <nav>
 	<div id="logo_div">
 		<img id="logo" src="/logo.webp" alt="" />
@@ -79,6 +219,28 @@
 		<div class="signup_a"><li><a href="/sign-up">Sign Up</a></li></div>
 	</ul>
 </nav>
+<!-- Navigation Bar for Mobile Dvices -->
+<div class="mobile_nav" style="display: {nav};">
+	<div on:click={() => mobileNav()}>
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			height="40px"
+			viewBox="0 -960 960 960"
+			width="40px"
+			fill="#000"
+			><path
+				d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+			/></svg
+		>
+	</div>
+
+	<ul>
+		<li><a href="/">Home</a></li>
+		<li><a href="/news">News</a></li>
+		<li><a href="/team">Team</a></li>
+		<div class="signup_a"><li><a href="/sign-up">Sign Up</a></li></div>
+	</ul>
+</div>
 <main>
 	x
 	<div style="margin-top: 140px;"></div>
@@ -94,7 +256,7 @@
 			<article
 				class="employee"
 				id={employee.id}
-				style="background: url('/employees/{employee.id}.png') no-repeat center center; background-size: cover; background-color: #F8CFCF;"
+				style="background: url('/employees/{employee.id}.png') no-repeat center center; background-size: cover; background-color: {employee.color};"
 				role="region"
 				aria-labelledby="{employee.id}-name"
 				itemscope
@@ -114,11 +276,12 @@
 			</article>
 		{/each}
 	</section>
-	<!-- Call to Action Section -->
-	<section aria-label="Join Our Team">
+
+	<section aria-label="Join Our Team" class="job">
 		<h2>Want Your Name on Here?</h2>
 		<h3>
-			Are you still searching for a job? Become part of a dynamic and innovative team here at Soty!
+			Are you still searching for a job? <br /> Become part of a dynamic and innovative team here at
+			Soty!
 		</h3>
 		<button><a href="/careers">View Job Openings</a></button>
 	</section>
@@ -178,5 +341,37 @@
 	}
 	.employeeInfo h4 {
 		margin: 3px 0 0 0;
+	}
+
+	@media screen and (max-width: 500px) {
+		.employees {
+			display: flex;
+			width: 100%;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+	}
+
+	.job {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 70px 0;
+	}
+
+	.job h2 {
+		font-size: 2.5rem;
+	}
+
+	.job h3 {
+		font-weight: 500;
+		text-align: center;
+	}
+
+	.job button {
+		margin: 20px 0 0 0;
 	}
 </style>

@@ -479,3 +479,11 @@ footer a:hover {
     scrollbar-width: none;
     /* Firefox */
 }
+
+.socialMedia {
+    display: flex;
+}
+
+.socialMedia a {
+    margin: 0 5px;
+}
