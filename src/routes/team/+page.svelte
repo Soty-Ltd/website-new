@@ -107,7 +107,7 @@
 				<!-- Image is now included in HTML with alt text -->
 				<img
 					src="/employees/{employee.id}.png"
-					alt="{employee.name} - {employee.job}"
+					alt="{employee.name} - {employee.job} - Soty"
 					style="display: none;"
 					itemprop="image"
 				/>
