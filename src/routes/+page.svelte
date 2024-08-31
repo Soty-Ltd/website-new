@@ -121,6 +121,7 @@
 		<li><a href="/">Home</a></li>
 		<li><a href="/news">News</a></li>
 		<li><a href="/team">Team</a></li>
+		<li><a href="/contact">Contact Us</a></li>
 
 		<div class="signup_a"><li><a href="/sign-up">Sign Up</a></li></div>
 	</ul>
@@ -144,6 +145,7 @@
 		<li><a href="/">Home</a></li>
 		<li><a href="/news">News</a></li>
 		<li><a href="/team">Team</a></li>
+		<li><a href="/contact">Contact Us</a></li>
 		<div class="signup_a"><li><a href="/sign-up">Sign Up</a></li></div>
 	</ul>
 </div>
