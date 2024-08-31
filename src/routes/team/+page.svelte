@@ -94,14 +94,23 @@
 			<article
 				class="employee"
 				id={employee.id}
-				style="background: url('/employees/{employee.id}.png'); background-size:cover; background-color:#F8CFCF; background-position:center;"
+				style="background: url('/employees/{employee.id}.png') no-repeat center center; background-size: cover; background-color: #F8CFCF;"
 				role="region"
 				aria-labelledby="{employee.id}-name"
+				itemscope
+				itemtype="http://schema.org/Person"
 			>
 				<div class="employeeInfo">
-					<h3 id="{employee.id}-name">{employee.name}</h3>
-					<h4>{employee.job}</h4>
+					<h3 id="{employee.id}-name" itemprop="name">{employee.name}</h3>
+					<h4 itemprop="jobTitle">{employee.job}</h4>
 				</div>
+				<!-- Image is now included in HTML with alt text -->
+				<img
+					src="/employees/{employee.id}.png"
+					alt="{employee.name} - {employee.job}"
+					style="display: none;"
+					itemprop="image"
+				/>
 			</article>
 		{/each}
 	</section>
