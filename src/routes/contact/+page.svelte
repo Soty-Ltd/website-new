@@ -152,7 +152,7 @@
 <style>
 	main {
 		padding: 0 80px;
-		height: 100vh;
+		height: 150vh;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -194,6 +194,7 @@
 	@media screen and (max-width: 600px) {
 		main {
 			padding: 0 30px;
+			height: 240vh;
 		}
 		.contact {
 			flex-direction: column;
@@ -206,6 +207,7 @@
 		}
 		.contactInfo {
 			display: block;
+			width: 100%;
 		}
 
 		#middle {
