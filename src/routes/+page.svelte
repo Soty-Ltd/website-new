@@ -94,11 +94,6 @@
 	}
 </script>
 
-<SEO
-	title={'Home'}
-	description={'Soty Ltd. - Leading Cloud Computing Solutions. Enhance your business efficiency with our secure, scalable, and innovative cloud services. Discover our cloud infrastructure, storage, and AI-powered solutions designed for businesses of all sizes.'}
-	image={'s'}
-/>
 <nav>
 	<div id="logo_div">
 		<img id="logo" src="/logo.webp" alt="" />
