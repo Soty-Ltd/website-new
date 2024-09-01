@@ -271,7 +271,7 @@
 				<!-- Image is now included in HTML with alt text -->
 				<img
 					src="/employees/{employee.id}.png"
-					alt="{employee.name} - {employee.job} - Soty"
+					alt="{employee.name} - {employee.job} - Soty Ltd."
 					style="display: none;"
 					itemprop="image"
 				/>
@@ -304,6 +304,10 @@
 
 	.employee h3 {
 		font-weight: 500;
+	}
+
+	h2 {
+		text-align: center;
 	}
 
 	p {
