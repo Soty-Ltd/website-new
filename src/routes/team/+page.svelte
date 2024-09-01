@@ -290,7 +290,10 @@
 	</section>
 </main>
 <section class="quote">
-	<img src="/employees/thorns.png" alt="" />
+	<img
+		src="/quotes/oliver-thorns-chief-executive-officer-soty.png"
+		alt="Oliver Thorns | Chief Executive Officer at Soty Ltd."
+	/>
 	<div>
 		<img src="/quote.svg" alt="" />
 		<h2>
