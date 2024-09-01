@@ -289,6 +289,21 @@
 		<button><a href="/careers">View Job Openings</a></button>
 	</section>
 </main>
+<section class="quote">
+	<img src="/employees/thorns.png" alt="" />
+	<div>
+		<img src="/quote.svg" alt="" />
+		<h2>
+			At Soty Ltd., our people are our greatest asset. We’re committed to building a dynamic and
+			inclusive environment where innovation thrives, and every team member feels empowered to drive
+			change in the cloud computing industry.
+		</h2>
+		<div class="quoter">
+			<b>Oliver Thorns</b>
+			<p>Chief Executive Officer at Soty Ltd.</p>
+		</div>
+	</div>
+</section>
 
 <style>
 	main {
@@ -387,5 +402,44 @@
 
 	.job button {
 		margin: 20px 0 0 0;
+	}
+
+	/* Quotes Section */
+	.quote {
+		background-color: #e4f1ad;
+		padding: 0;
+		display: flex;
+		align-items: center;
+	}
+
+	.quote h2 {
+		text-align: left;
+	}
+
+	.quote > div {
+		margin: 40px;
+	}
+
+	.quote > img {
+		height: 50vh;
+		margin: 0 50px;
+	}
+
+	.quoter {
+		margin: 5px 0 0 0;
+	}
+
+	.quoter b {
+		font-size: 1.25rem;
+	}
+
+	.quoter p {
+		font-size: 1.25rem;
+	}
+
+	@media screen and (max-width: 600px) {
+		.quote {
+			flex-direction: column;
+		}
 	}
 </style>
