@@ -190,7 +190,7 @@
 
 <SEO
 	title={'Team'}
-	description={'Discover the talented team behind Soty, leaders in cloud computing. Meet our executives, engineers, and support staff who drive innovation and excellence. Learn more about our skilled professionals and their roles.'}
+	description={'Soty Ltd. - Discover the talented team behind Soty, leaders in cloud computing. Meet our executives, engineers, and support staff who drive innovation and excellence. Learn more about our skilled professionals and their roles.'}
 	image={'s'}
 />
 <nav>
@@ -253,15 +253,16 @@
 		solutions that make a difference. Every team member plays a crucial role in shaping the
 		exceptional experience we provide to our clients.
 	</p>
+	<!-- style="background: url('/employees/{employee.id}.png') no-repeat center center; background-size: cover; " -->
 	<section class="employees" aria-label="Team Members">
 		{#each employees as employee}
 			<article
 				class="employee"
 				id={employee.id}
-				style="background: url('/employees/{employee.id}.png') no-repeat center center; background-size: cover; background-color: {employee.color};"
 				role="region"
 				aria-labelledby="{employee.id}-name"
 				itemscope
+				style="background-color: {employee.color};"
 				itemtype="http://schema.org/Person"
 			>
 				<div class="employeeInfo">
@@ -271,9 +272,9 @@
 				<!-- Image is now included in HTML with alt text -->
 				<img
 					src="/employees/{employee.id}.png"
-					alt="{employee.name} - {employee.job} - Soty Ltd."
-					style="display: none;"
+					alt="{employee.name} - {employee.job} at Soty Ltd."
 					itemprop="image"
+					class="employeeImg"
 				/>
 			</article>
 		{/each}
@@ -336,19 +337,26 @@
 		display: flex;
 		justify-content: center;
 		align-items: end;
+		position: relative;
+		overflow: hidden;
 	}
 	.employeeInfo {
 		background-color: #f9fce9;
-		width: 90%;
+		width: 180px;
 		margin: 20px;
 		border-radius: 10px;
 		padding: 10px;
 		border: 2px solid white;
+		position: absolute;
+		z-index: 100;
 	}
 	.employeeInfo h4 {
 		margin: 3px 0 0 0;
 	}
 
+	.employeeImg {
+		width: 230px;
+	}
 	@media screen and (max-width: 500px) {
 		.employees {
 			display: flex;
