@@ -189,7 +189,7 @@
 </script>
 
 <SEO
-	title={'Team'}
+	title={'Team and Employees'}
 	description={'Soty Ltd. - Discover the talented team behind Soty, leaders in cloud computing. Meet our executives, engineers, and support staff who drive innovation and excellence. Learn more about our skilled professionals and their roles.'}
 	image={'s'}
 />
@@ -252,8 +252,9 @@
 		wizards to strategic planners and customer advocates, our team is dedicated to delivering
 		solutions that make a difference. Every team member plays a crucial role in shaping the
 		exceptional experience we provide to our clients.
+		<!-- </p> -->
+		<!-- style="background: url('/employees/{employee.id}.png') no-repeat center center; background-size: cover; " -->
 	</p>
-	<!-- style="background: url('/employees/{employee.id}.png') no-repeat center center; background-size: cover; " -->
 	<section class="employees" aria-label="Team Members">
 		{#each employees as employee}
 			<article
