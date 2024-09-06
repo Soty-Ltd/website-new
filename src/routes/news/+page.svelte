@@ -10,7 +10,15 @@
 		<div class="signup_a"><li><a href="/sign-up">Sign Up</a></li></div>
 	</ul>
 </nav> -->
+<script>
+	import SEO from '$lib/components/SEO.svelte';
+</script>
 
+<SEO
+	title={'News |'}
+	description={'Soty Ltd. - Discover the talented team behind Soty, leaders in cloud computing. Meet our executives, engineers, and support staff who drive innovation and excellence. Learn more about our skilled professionals and their roles.'}
+	image={'s'}
+/>
 <div class="heroNews">
 	<div style="margin: 30px; ">
 		<h2>Newsroom</h2>
