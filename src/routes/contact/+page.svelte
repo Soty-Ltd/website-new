@@ -11,7 +11,7 @@
 </script>
 
 <SEO
-	title={'Contact Us'}
+	title={'Contact Us |'}
 	description={"Get in touch with Soty Ltd. for reliable customer support and assistance. Contact us via phone, email, or visit our office. We're here to help with any inquiries or concerns you may have. Call us today!"}
 	image={'s'}
 />

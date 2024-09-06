@@ -1,13 +1,13 @@
 <script>
 	import { page } from '$app/stores';
 
-	export let title = 'Home | soty.one';
+	export let title = 'Home | Soty Ltd.';
 	export let description = 'Description of your website.';
 	export let image = 'https://soty.one/your-logo.png';
 </script>
 
 <svelte:head>
-	<title>{title} | soty.one</title>
+	<title>{title} Soty Ltd.</title>
 	<meta name="description" content={description} />
 	<meta property="og_site_name" content="soty.one" />
 	<meta property="og:url" content="https://www.soty.one{$page.url.pathname.toString()}" />

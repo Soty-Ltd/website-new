@@ -8,6 +8,11 @@
 	}
 </script>
 
+<SEO
+	title={'Sign Up |'}
+	description={'Soty Ltd. - Discover the talented team behind Soty, leaders in cloud computing. Meet our executives, engineers, and support staff who drive innovation and excellence. Learn more about our skilled professionals and their roles.'}
+	image={'s'}
+/>
 <main>
 	<div class="data">
 		<a id="back" href="/"
