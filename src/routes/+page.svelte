@@ -50,7 +50,6 @@
 	const interval = setInterval(addNumber, 10);
 
 	import { onMount } from 'svelte';
-	import Seo from '../lib/components/SEO.svelte';
 
 	let scrollContainer;
 	let scrollContainer1;
@@ -228,7 +227,7 @@
 	<h1>All of our Datacenters and <br /> probaly one for you</h1>
 
 	<div class="locations">
-		<div>London, UK <br /> {getServerPing()}ms <small>*1</small></div>
+		<div>London, UK <br /> {getServerPing()}ms</div>
 		<div>Frankfurt, Germany <br /> {getServerPing()}ms</div>
 		<div>New York, USA <br /> {getServerPing()}ms</div>
 		<div>Stockholm, Sweden <br /> {getServerPing()}ms</div>
@@ -262,7 +261,6 @@
 		<h1 id="dataDel">{dataTB.toLocaleString()} Gigabyte</h1>
 		<div style="display: flex;">
 			<h2 id="data">of Data since you opened our Website</h2>
-			<small>*2</small>
 		</div>
 	</div>
 </section>
