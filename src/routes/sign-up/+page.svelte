@@ -1,4 +1,5 @@
 <script>
+	import SEO from '$lib/components/SEO.svelte';
 	function sso() {
 		alert('Single Sign On currently not available');
 	}

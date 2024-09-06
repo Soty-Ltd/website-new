@@ -1,3 +1,7 @@
+<script>
+	import SEO from '$lib/components/SEO.svelte';
+</script>
+
 <SEO
 	title={'Terms of Service |'}
 	description={'Soty Ltd. - Discover the talented team behind Soty, leaders in cloud computing. Meet our executives, engineers, and support staff who drive innovation and excellence. Learn more about our skilled professionals and their roles.'}
