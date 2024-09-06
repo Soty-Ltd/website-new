@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
 
 <url>
   <loc>https://soty.one/</loc>
   <lastmod>2024-09-06T19:31:58+00:00</lastmod>
   <priority>1.00</priority>
 </url>
+
 <url>
   <loc>https://soty.one/news</loc>
   <lastmod>2024-09-06T19:31:58+00:00</lastmod>
   <priority>0.80</priority>
 </url>
+
 <url>
   <loc>https://soty.one/team</loc>
   <lastmod>2024-09-06T19:31:58+00:00</lastmod>
@@ -26,6 +28,7 @@
     <image:title>Oliver Thorns - Chief Executive Officer at Soty Ltd.</image:title>
   </image:image>
 </url>
+
 <url>
   <loc>https://soty.one/contact</loc>
   <lastmod>2024-09-06T19:31:58+00:00</lastmod>
@@ -36,21 +39,23 @@
     <image:title>Contact Us - Soty Ltd.</image:title>
   </image:image>
 </url>
+
 <url>
   <loc>https://soty.one/sign-up</loc>
   <lastmod>2024-09-06T19:31:58+00:00</lastmod>
   <priority>0.80</priority>
 </url>
+
 <url>
   <loc>https://soty.one/careers</loc>
   <lastmod>2024-09-06T19:31:58+00:00</lastmod>
   <priority>0.80</priority>
 </url>
+
 <url>
   <loc>https://soty.one/tos</loc>
   <lastmod>2024-09-06T19:31:58+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-
 
 </urlset>
