@@ -1,4 +1,5 @@
 <script>
+	import NAV from '$lib/components/NAV.svelte';
 	const jobs = [
 		{
 			title: 'Cloud Solutions Architect',
@@ -38,7 +39,7 @@
 	];
 </script>
 
-
+<NAV />
 <main>
 	<div class="head">
 		<h1>We're hiring!</h1>

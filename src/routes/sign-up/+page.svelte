@@ -1,14 +1,9 @@
 <script>
 	import SEO from '$lib/components/SEO.svelte';
-	function sso() {
-		alert('Single Sign On currently not available');
-	}
-
-	function signup() {
-		window.location.replace('sign-up/next-steps');
-	}
+	import NAV from '$lib/components/NAV.svelte';
 </script>
 
+<NAV />
 <SEO
 	title={'Sign Up |'}
 	description={'Soty Ltd. - Discover the talented team behind Soty, leaders in cloud computing. Meet our executives, engineers, and support staff who drive innovation and excellence. Learn more about our skilled professionals and their roles.'}
