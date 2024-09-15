@@ -177,14 +177,21 @@
 			job: 'Customer Support Specialist',
 			group: 'support',
 			color: '#F8CFCF'
+		},
+		{
+			name: 'Clara Smith',
+			id: 'smith',
+			job: 'Software Engineer',
+			group: 'support',
+			color: '#EACFF8'
+		},
+		{
+			name: 'Emilia Jones',
+			id: 'jones',
+			job: 'Software Engineer',
+			group: 'support',
+			color: '#CFF8DF'
 		}
-		// {
-		// 	name: 'This could be you',
-		// 	id: 'you',
-		// 	job: 'Apply now',
-		// 	group: 'apply',
-		// 	color: '#CFF8DF'
-		// }
 	];
 </script>
 
