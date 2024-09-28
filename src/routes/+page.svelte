@@ -113,7 +113,7 @@
 	/>
 </section>
 
-<section class="offers h-min py-24 flex relative justify-center items-center">
+<section class="offers h-min py-23 flex relative justify-center items-center bg-[#f9fce9] flex-col">
 	<h1>What we Offer</h1>
 	<div class="test1" bind:this={scrollContainer}>
 		<h2 style="font-weight: 500;">Cloud Computing Models</h2>
@@ -167,22 +167,17 @@
 		<h2>Automation</h2>
 		<h2>DevOps</h2>
 	</div>
-
-	<!-- {#each paragraphs as paragraph, index}
-		Use inline style to set random positions within the section
-		<div
-			class="paragraph"
-			style="top: {getRandomPosition(index).x}%; left: {getRandomPosition(index)
-				.x}%; position: absolute;"
-		>
-			{paragraph}
-		</div>
-	{/each} -->
 </section>
-<section class="datacenters">
-	<h1>All of our Datacenters and <br /> probaly one for you</h1>
+<section
+	class="datacenters inline-flex items-center justify-center w-screen text-left h-max box-border p-8 max-sm:block max-sm:p-5"
+>
+	<h1 class="font-black text-left max-sm:mb-8">
+		All of our Datacenters and <br /> probaly one for you
+	</h1>
 
-	<div class="locations">
+	<div
+		class="grid grid-rows-2 grid-cols-3 gap-3 m-10 max-sm:w-full max-sm:grid-rows-[repeat(auto, 1fr)] max-sm:grid-rows-[repeat(auto, 1fr)] max-sm:m-0"
+	>
 		<div>London, UK <br /> {getServerPing()}ms</div>
 		<div>Frankfurt, Germany <br /> {getServerPing()}ms</div>
 		<div>New York, USA <br /> {getServerPing()}ms</div>
@@ -191,9 +186,9 @@
 		<div>Toronto, Canada <br /> {getServerPing()}ms</div>
 	</div>
 </section>
-<section class="prices">
-	<h2>Some of our Products</h2>
-	<div class="products">
+<section class="prices bg-[#e1f1a5] flex justify-center items-center flex-col py-10">
+	<h2 class="font-semibold text-5xl">Some of our Products</h2>
+	<div class="products flex justify-center items-center max-sm:block">
 		<div class="product">
 			<h2>VPS</h2>
 			<h3>Starting at 4.59$</h3>
@@ -211,12 +206,12 @@
 		</div>
 	</div>
 </section>
-<section class="data_delivered">
+<section class="data_delivered flex items-center justify-center p-10">
 	<div>
-		<h2 id="data">We delivered over</h2>
-		<h1 id="dataDel">{dataTB.toLocaleString()} Gigabyte</h1>
+		<h2 class="text-4xl">We delivered over</h2>
+		<h1 class="font-bold text-8xl text-left">{dataTB.toLocaleString()} Gigabyte</h1>
 		<div style="display: flex;">
-			<h2 id="data">of Data since you opened our Website</h2>
+			<h2 class="text-4xl">of Data since you opened our Website</h2>
 		</div>
 	</div>
 </section>

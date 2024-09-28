@@ -13,16 +13,20 @@
 		<div style="display: contents">%sveltekit.body%</div>
 	</body>
 
-	<footer>
-		<div class="dividerFooter">
+	<footer class="bg-[#f9fce9] p-8">
+		<div class="flex justify-between">
 			<div>
 				<div style="display: flex">
 					<img src="logo.webp" class="w-10 h-8" alt="" />
 					<h2 style="margin: 0 10px">Soty Ltd.</h2>
 				</div>
 				<div style="display: flex; margin: 20px 0">
-					<a href="/sign-up"><button id="footerBTN">Try Soty</button></a>
-					<button id="footerBTN" class="demo">Watch Demo</button>
+					<a href="/sign-up"><button class="rounded-full mr-3">Try Soty</button></a>
+					<button
+						class="rounded-full mr-3 border-2 border-black border-solid bg-transparent text-black hover:bg-[#212b0d] hover:text-[#f2f8d3]"
+					>
+						Watch Demo
+					</button>
 				</div>
 			</div>
 			<div>
@@ -45,7 +49,7 @@
 		<hr />
 		<div style="display: flex; justify-content: space-between">
 			<p>© 2024 Soty Ltd. All rights reserved</p>
-			<div class="socialMedia">
+			<div class="socialMedia flex">
 				<!-- YouTube -->
 				<a href="https://www.youtube.com/@sotylimited"
 					><svg
