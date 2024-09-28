@@ -92,16 +92,28 @@
 	image={'s'}
 />
 <NAV />
-<section class="hero">
-	<h1>We turn your on-premises applications <br /> into a dynamic cloud solution in seconds.</h1>
-	<button on:click={() => signup()}>Sign Up</button>
+<section
+	class="hero h-screen w-screen flex justify-center place-items-center flex-col bg-cover bg-center bg-[url('gradient.webp')] bg-no-repeat max-sm:flex max-sm:items-start max-sm:text-left"
+>
+	<h1 class="m-5 max-sm:text-left">
+		We turn your on-premises applications <br /> into a dynamic cloud solution in seconds.
+	</h1>
+	<button class="text-base scroll-px-8 py-3 max-md:ml-5" on:click={() => signup()}>Sign Up</button>
 </section>
-<section class="us">
-	<h2>We are a UK-based company offering top-tier servers to kickstart your project.</h2>
-	<img src="northshields.webp" alt="" />
+<section class="us flex relative content-center p-8 h-3/5 max-sm:h-4/5">
+	<h2
+		class="font-thin text-6xl leading-normal absolute z-50 top-1/2 -translate-y-1/2 left-[10%] max-sm:text-4xl max-sm:m-5 max-sm:left-0"
+	>
+		We are a UK-based company offering top-tier servers to kickstart your project.
+	</h2>
+	<img
+		src="northshields.webp"
+		class="h-4/5 absolute right-[10%] opacity-60 max-sm:h-4/5 max-sm:left-1/2 max-sm:-translate-x-1/2"
+		alt=""
+	/>
 </section>
 
-<section class="offers">
+<section class="offers h-min py-24 flex relative justify-center items-center">
 	<h1>What we Offer</h1>
 	<div class="test1" bind:this={scrollContainer}>
 		<h2 style="font-weight: 500;">Cloud Computing Models</h2>

@@ -54,44 +54,6 @@ button:hover {
 	background-color: #3d4e19;
 }
 
-/* NAVIGATION BAR */
-nav {
-	width: 100vw;
-	height: 60px;
-	background-color: #f9fce9;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 0 30px;
-	box-sizing: border-box;
-	position: fixed;
-	z-index: 10000;
-	border-bottom: 1px solid black;
-}
-
-#logo {
-	height: 30px;
-}
-
-#logo_div {
-	display: flex;
-	align-items: center;
-	flex-direction: row;
-}
-
-#logo_div h2 {
-	margin: 0 0 0 10px;
-}
-
-.hamburger {
-	display: none;
-}
-
-nav ul {
-	display: flex;
-	align-items: center;
-}
-
 nav li {
 	margin: 0 20px;
 }
@@ -100,146 +62,12 @@ nav li:hover a {
 	text-decoration: underline;
 }
 
-.signup_a {
-	background-color: #212b0d;
-	border: 1px solid black;
-	padding: 10px;
-	border-radius: 2000px;
-}
-
-.signup_a:hover {
-	background: none;
-}
-
-.signup_a:hover a {
-	color: #000;
-}
-
-.signup_a a {
-	color: #f9fce9;
-}
-
-/* MOBILE NAVIGATION BAR */
-
-.mobile_nav {
-	width: 100vw;
-	height: 100vh;
-	background-color: #fafcea;
-	z-index: 100000000;
-	position: fixed;
-	padding: 40px;
-	width: 100%;
-	box-sizing: border-box;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-	font-size: 1.25rem;
-}
-
 .mobile_nav li {
 	margin: 15px;
 }
 
-@media screen and (max-width: 600px) {
-	.hamburger {
-		display: block;
-	}
-
-	nav ul {
-		display: none;
-	}
-}
-
-.mobile_nav .signup_a {
-	padding: 5px 20px;
-}
-
-/* HERO */
-.hero {
-	width: 100vw;
-	height: 100vh;
-
-	/* For the gradient Background */
-	background: url('/gradient.webp') no-repeat;
-	background-size: cover;
-	background-position: center;
-
-	/* Center all the Items */
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-}
-
 h1 {
 	font-weight: 500;
-}
-
-.hero h1 {
-	margin: 20px;
-	font-weight: 500;
-}
-
-.hero button {
-	font-size: 1rem;
-	padding: 10px 30px;
-}
-
-.us {
-	display: flex;
-	position: relative;
-	align-content: center;
-	padding: 30px;
-	height: 60%;
-}
-
-.us h2 {
-	font-weight: lighter;
-	font-size: 3.25rem;
-	position: absolute;
-	z-index: 100;
-	top: 50%;
-	transform: translateY(-50%);
-	left: 10%;
-}
-
-.us img {
-	height: 80%;
-	position: absolute;
-	right: 10%;
-	opacity: 0.6;
-}
-
-@media screen and (max-width: 500px) {
-	.hero {
-		display: flex;
-		align-items: start;
-		text-align: left;
-	}
-
-	.hero h1 {
-		text-align: left;
-	}
-
-	.hero button {
-		margin: 0 0 0 20px;
-	}
-
-	.us {
-		height: 80%;
-	}
-
-	.us h2 {
-		font-size: 2.25rem;
-		margin: 20px;
-		left: 0;
-	}
-
-	.us img {
-		height: 80%;
-		left: 50%;
-		transform: translateX(-50%);
-	}
 }
 
 @keyframes fadeIn {
@@ -252,19 +80,13 @@ h1 {
 		z-index: 101;
 	}
 }
-
 .us img:hover {
-	animation: fadeIn 0.3s;
+	animation: fadeIn;
+	animation-duration: 0.3s;
 	animation-fill-mode: forwards;
 }
 
 .offers {
-	height: min-content;
-	padding: 100px 0;
-	display: flex;
-	position: relative;
-	justify-content: center;
-	align-items: center;
 	flex-direction: column;
 	background-color: #f9fce9;
 }
