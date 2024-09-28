@@ -113,8 +113,10 @@
 	/>
 </section>
 
-<section class="offers h-min py-23 flex relative justify-center items-center bg-[#f9fce9] flex-col">
-	<h1>What we Offer</h1>
+<section
+	class="offers h-min py-[7rem] flex relative justify-center items-center bg-[#f9fce9] flex-col"
+>
+	<h1 class="">What we Offer</h1>
 	<div class="test1" bind:this={scrollContainer}>
 		<h2 style="font-weight: 500;">Cloud Computing Models</h2>
 		<h2>Hybrid Cloud</h2>
@@ -169,7 +171,7 @@
 	</div>
 </section>
 <section
-	class="datacenters inline-flex items-center justify-center w-screen text-left h-max box-border p-8 max-sm:block max-sm:p-5"
+	class="datacenters inline-flex items-center justify-center w-screen text-left h-max box-border p-8 max-sm:block max-sm:py-20"
 >
 	<h1 class="font-black text-left max-sm:mb-8">
 		All of our Datacenters and <br /> probaly one for you
@@ -188,21 +190,33 @@
 </section>
 <section class="prices bg-[#e1f1a5] flex justify-center items-center flex-col py-10">
 	<h2 class="font-semibold text-5xl">Some of our Products</h2>
-	<div class="products flex justify-center items-center max-sm:block">
-		<div class="product">
-			<h2>VPS</h2>
-			<h3>Starting at 4.59$</h3>
-			<button id="productBTN">-></button>
+	<div class="products flex justify-center items-center max-sm:block w-screen">
+		<div class="bg-white m-3 p-10">
+			<h2 class="font-medium text-4xl">VPS</h2>
+			<h3 class="font-light text-lg">Starting at 4.59$</h3>
+			<button
+				id="productBTN"
+				class="mt-3 border-2 text-black bg-white rounded-full border-black border-solid hover:bg-black hover:text-white"
+				>-></button
+			>
 		</div>
-		<div class="product">
-			<h2>Storage</h2>
-			<h3>Starting at 4.59$</h3>
-			<button id="productBTN">-></button>
+		<div class="bg-white m-3 p-10">
+			<h2 class="font-medium text-4xl">Storage</h2>
+			<h3 class="font-light text-lg">Starting at 4.59$</h3>
+			<button
+				id="productBTN"
+				class="mt-3 border-2 text-black bg-white rounded-full border-black border-solid hover:bg-black hover:text-white"
+				>-></button
+			>
 		</div>
-		<div class="product">
-			<h2>VPNs</h2>
-			<h3>Starting at 4.59$</h3>
-			<button id="productBTN">-></button>
+		<div class="bg-white m-3 p-10">
+			<h2 class="font-medium text-4xl">VPNs</h2>
+			<h3 class="font-light text-lg">Starting at 4.59$</h3>
+			<button
+				id="productBTN"
+				class="mt-3 border-2 text-black bg-white rounded-full border-black border-solid hover:bg-black hover:text-white"
+				>-></button
+			>
 		</div>
 	</div>
 </section>
