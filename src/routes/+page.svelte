@@ -93,7 +93,7 @@
 />
 <NAV />
 <section
-	class="hero h-screen w-screen flex justify-center place-items-center flex-col bg-cover bg-center bg-[url('gradient.webp')] bg-no-repeat max-sm:flex max-sm:items-start max-sm:text-left"
+	class="hero h-screen w-screen flex justify-center place-items-center flex-col bg-cover bg-center bg-[url('/gradient.webp')] bg-no-repeat max-sm:flex max-sm:items-start max-sm:text-left"
 >
 	<h1 class="m-5 max-sm:text-left">
 		We turn your on-premises applications <br /> into a dynamic cloud solution in seconds.

@@ -194,7 +194,7 @@
 	image={'s'}
 />
 <NAV />
-<main>
+<main class="flex justify-center items-start flex-col px-12">
 	x
 	<div style="margin-top: 20vw;"></div>
 	<h1>Meet Our Amazing Team at Soty Ltd.</h1>
@@ -206,10 +206,13 @@
 		<!-- </p> -->
 		<!-- style="background: url('/employees/{employee.id}.png') no-repeat center center; background-size: cover; " -->
 	</p>
-	<section class="employees" aria-label="Team Members">
+	<section
+		class="employees w-full grid grid-cols-[repeat(auto-fill,minmax(230px,1fr))] grid-rows-[repeat(auto-fill,minmax(340px,300px)] gap-3 my-12 justify-start justify-items-start max-sm:flex max-sm:w-full max-sm:justify-center max-sm:items-center max-sm:flex-col"
+		aria-label="Team Members"
+	>
 		{#each employees as employee}
 			<article
-				class="employee"
+				class="employee w-[230px] h-[340px] bg-contain bg-center flex justify-center items-end relative overflow-hidden"
 				id={employee.id}
 				role="region"
 				aria-labelledby="{employee.id}-name"
@@ -217,186 +220,53 @@
 				style="background-color: {employee.color};"
 				itemtype="http://schema.org/Person"
 			>
-				<div class="employeeInfo">
+				<div
+					class="employeeInfo bg-[#f9fce9] w-[90%] m-5 rounded-[10px] p-3 border-2 border-solid border-white z-50 absolute"
+				>
 					<h3 id="{employee.id}-name" class="font-medium text-xl" itemprop="name">
 						{employee.name}
 					</h3>
-					<h4 itemprop="jobTitle">{employee.job}</h4>
+					<h4 itemprop="jobTitle" class="font-normal mt-1">{employee.job}</h4>
 				</div>
 				<!-- Image is now included in HTML with alt text -->
 				<img
 					src="/employees/{employee.id}.png"
 					alt="{employee.name} - {employee.job} at Soty Ltd."
 					itemprop="image"
-					class="employeeImg"
+					class="employeeImg w-[230px]"
 				/>
 			</article>
 		{/each}
 	</section>
 
-	<section aria-label="Join Our Team" class="job">
-		<h2>Want Your Name on Here?</h2>
-		<h3>
+	<section
+		aria-label="Join Our Team"
+		class="job w-full flex flex-col justify-center items-center my-20"
+	>
+		<h2 class="text-center text-4xl">Want Your Name on Here?</h2>
+		<h3 class="font-medium text-center">
 			Are you still searching for a job? <br /> Become part of a dynamic and innovative team here at
 			Soty!
 		</h3>
-		<button><a href="/careers">View Job Openings</a></button>
+		<button class="mt-5"><a href="/careers" class="text-[#f0f8cf]">View Job Openings</a></button>
 	</section>
 </main>
-<section class="quote">
+<section class="quote bg-[#e4f1ad] p-0 flex items-center max-sm:flex-col">
 	<img
+		class="h-[50vh] mx-13"
 		src="/quotes/oliver-thorns-chief-executive-officer-soty.png"
 		alt="Oliver Thorns | Chief Executive Officer at Soty Ltd."
 	/>
-	<div>
+	<div class="m-10">
 		<img src="/quote.svg" alt="" />
-		<h2>
+		<h2 class="text-left">
 			At Soty Ltd., our people are our greatest asset. We’re committed to building a dynamic and
 			inclusive environment where innovation thrives, and every team member feels empowered to drive
 			change in the cloud computing industry.
 		</h2>
-		<div class="quoter">
-			<b>Oliver Thorns</b>
-			<p>Chief Executive Officer at Soty Ltd.</p>
+		<div class="quoter mt-1">
+			<b class="text-xl">Oliver Thorns</b>
+			<p class="text-xl">Chief Executive Officer at Soty Ltd.</p>
 		</div>
 	</div>
 </section>
-
-<style>
-	main {
-		display: flex;
-		justify-content: center;
-		align-items: start;
-		flex-direction: column;
-		padding: 0 50px 0;
-	}
-
-	.employee h4 {
-		font-weight: 400;
-	}
-
-	.employee h3 {
-		font-weight: 500;
-	}
-
-	h2 {
-		text-align: center;
-	}
-
-	p {
-		font-size: 1.25rem;
-	}
-
-	button a {
-		color: #f0f8cf;
-	}
-	.employees {
-		width: 100%;
-		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-		grid-template-rows: repeat(auto-fill, minmax(340px, 300px));
-		gap: 10px;
-		margin: 50px 0;
-		justify-items: start; /* Aligns the items to the start of each cell */
-		justify-content: start; /* Aligns the entire grid to the start (left) */
-	}
-
-	.employee {
-		width: 230px;
-		height: 340px;
-		background-size: contain;
-		background-position: center;
-		display: flex;
-		justify-content: center;
-		align-items: end;
-		position: relative;
-		overflow: hidden;
-	}
-	.employeeInfo {
-		background-color: #f9fce9;
-		width: 90%;
-		margin: 20px;
-		border-radius: 10px;
-		padding: 10px;
-		border: 2px solid white;
-		position: absolute;
-		z-index: 100;
-	}
-	.employeeInfo h4 {
-		margin: 3px 0 0 0;
-	}
-
-	.employeeImg {
-		width: 230px;
-	}
-	@media screen and (max-width: 500px) {
-		.employees {
-			display: flex;
-			width: 100%;
-			justify-content: center;
-			align-items: center;
-			flex-direction: column;
-		}
-	}
-
-	.job {
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		margin: 70px 0;
-	}
-
-	.job h2 {
-		font-size: 2.5rem;
-	}
-
-	.job h3 {
-		font-weight: 500;
-		text-align: center;
-	}
-
-	.job button {
-		margin: 20px 0 0 0;
-	}
-
-	/* Quotes Section */
-	.quote {
-		background-color: #e4f1ad;
-		padding: 0;
-		display: flex;
-		align-items: center;
-	}
-
-	.quote h2 {
-		text-align: left;
-	}
-
-	.quote > div {
-		margin: 40px;
-	}
-
-	.quote > img {
-		height: 50vh;
-		margin: 0 50px;
-	}
-
-	.quoter {
-		margin: 5px 0 0 0;
-	}
-
-	.quoter b {
-		font-size: 1.25rem;
-	}
-
-	.quoter p {
-		font-size: 1.25rem;
-	}
-
-	@media screen and (max-width: 600px) {
-		.quote {
-			flex-direction: column;
-		}
-	}
-</style>
