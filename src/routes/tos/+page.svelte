@@ -9,14 +9,14 @@
 	description={'Soty Ltd. - Discover the talented team behind Soty, leaders in cloud computing. Meet our executives, engineers, and support staff who drive innovation and excellence. Learn more about our skilled professionals and their roles.'}
 	image={'s'}
 />
-<main>
+<main class="p-8 pt-32">
 	<div class="head">
-		<h1>Terms of Service</h1>
-		<h3 class="updated">Last Updated: 08.11.2024</h3>
+		<h1 class="text-8xl font-bold">Terms of Service</h1>
+		<h3 class="updated font-medium text-[#4a5567] max-sm:text-center">Last Updated: 08.11.2024</h3>
 	</div>
-	<div class="split">
-		<div class="text">
-			<h3 class="intro">
+	<div class="split my-16 flex justify-between max-sm:flex-col">
+		<div class="text w-[60vw] max-sm:w-[90vw]">
+			<h3 class="intro font-normal text-2xl">
 				Welcome to Soty Ltd. ("we," "us," "our"). These Terms of Service ("Terms") govern your
 				access to and use of our cloud computing services, including any related services, features,
 				and applications (collectively, the "Services"). By accessing or using our Services, you
@@ -193,7 +193,7 @@
 				+1 917-624-9703
 			</p>
 		</div>
-		<div class="table">
+		<div class="table w-[30vw] max-sm:order-first">
 			<h2>Table of Contents</h2>
 			<ul>
 				<li>
@@ -248,51 +248,9 @@
 </main>
 
 <style>
-	h1 {
-		font-weight: bold;
-		font-size: 5.25rem;
-	}
-
-	h3 {
-		font-weight: 500;
-	}
-
 	p {
 		color: #4a5567;
 		font-size: 1.25rem;
-	}
-
-	main {
-		padding: 30px;
-	}
-
-	.updated {
-		color: #4a5567;
-	}
-
-	.split {
-		margin: 60px 0;
-		display: flex;
-		justify-content: space-between;
-	}
-
-	.intro {
-		font-weight: 400;
-		font-size: 1.5rem;
-	}
-
-	.topic {
-		font-size: 1.25rem;
-	}
-
-	.table {
-		width: 30vw;
-		/* position: fixed;
-		right: 0; */
-	}
-
-	.text {
-		width: 60vw;
 	}
 
 	.table li {
@@ -309,15 +267,5 @@
 		list-style: decimal;
 		color: #4a5567;
 		font-size: 1.25rem;
-	}
-
-	@media screen and (max-width: 800px) {
-		.split {
-			display: block;
-		}
-
-		.text {
-			width: 90vw;
-		}
 	}
 </style>
