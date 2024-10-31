@@ -9,9 +9,11 @@
 	description={'Soty Ltd. - Discover the talented team behind Soty, leaders in cloud computing. Meet our executives, engineers, and support staff who drive innovation and excellence. Learn more about our skilled professionals and their roles.'}
 	image={'s'}
 />
-<main>
-	<div class="data">
-		<a id="back" href="/"
+<main
+	class="flex h-screen w-screen p-8 pt-20 box-border max-sm:flex max-sm:justify-center max-sm:items-center"
+>
+	<div class="data w-[40vw] p-10 max-sm:w-screen">
+		<a id="back" class="flex items-center" href="/"
 			><svg
 				xmlns="http://www.w3.org/2000/svg"
 				height="24px"
@@ -21,138 +23,51 @@
 				><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" /></svg
 			> Home</a
 		>
-		<h1>Sign Up</h1>
-		<h3>Start your journey with us right now.</h3>
+		<h1 class="text-left font-semibold text-4xl">Sign Up</h1>
+		<h3 class="font-normal text-xl">Start your journey with us right now.</h3>
 		<br />
 		<!-- SSO Sign in -->
-		<button class="sso" on:click={() => sso()}>Sign in with Google</button>
-		<button class="sso" on:click={() => sso()}>Sign in with GitHub</button>
-		<div class="divider">
-			<div class="divide"></div>
-			<p>Or</p>
-			<div class="divide"></div>
+		<button
+			class="sso w-[70%] border-[1px] border-solid border-black bg-transparent rounded-md py-3 pr-5 pl-4 text-base mt-4 box-content text-black hover:bg-[#e1f1a5] max-sm:w-full max-sm:box-border"
+			on:click={() => sso()}>Sign in with Google</button
+		>
+
+		<button
+			class="sso w-[70%] border-[1px] border-solid border-black bg-transparent rounded-md py-3 pr-5 pl-4 text-base mt-4 box-content text-black hover:bg-[#e1f1a5] max-sm:w-full max-sm:box-border"
+			on:click={() => sso()}>Sign in with GitHub</button
+		>
+		<div class="divider flex items-center w-[calc(70%+35px)] box-content max-sm:w-full">
+			<div class="divide border-[1px] border-solid border-black w-full h-0"></div>
+			<p class="m-5">Or</p>
+			<div class="divide border-[1px] border-solid border-black w-full h-0"></div>
 		</div>
 		<!-- Sign in per E-Mail -->
 		<div>
 			<label for="">Email</label>
 			<br />
-			<input type="text" placeholder="john@doe.com" />
+			<input
+				type="text"
+				class="w-[70%] border-[1px] border-solid border-black bg-transparent rounded-md py-3 pr-5 pl-4 text-base mt-1 box-content max-sm:w-full max-sm:box-border"
+				placeholder="john@doe.com"
+			/>
 		</div>
 		<div style="margin: 10px 0 0 0;">
 			<label for="">Password</label>
 			<br />
-			<input type="password" placeholder="" id="pw" />
+			<input
+				type="password"
+				class="w-[70%] border-[1px] border-solid border-black bg-transparent rounded-md py-3 pr-5 pl-4 text-base mt-1 box-content max-sm:w-full max-sm:box-border"
+				placeholder="mysafepassword1234"
+				id="pw"
+			/>
 		</div>
-		<button on:click={() => signup()}>Sign Up</button>
+		<button
+			class="max-sm:w-full max-sm:box-border w-[70%] box-content mt-4 rounded-lg"
+			on:click={() => signup()}>Sign Up</button
+		>
 	</div>
 
-	<div class="info"></div>
+	<div
+		class="info w-[60vw] rounded-xl bg-[url('/signup.webp')] bg-center bg-cover max-sm:hidden"
+	></div>
 </main>
-
-<style>
-	main {
-		display: flex;
-		height: 100vh;
-		width: 100vw;
-		padding: 30px;
-		box-sizing: border-box;
-	}
-
-	.data {
-		width: 40vw;
-		padding: 40px;
-	}
-
-	.info {
-		width: 60vw;
-		border-radius: 10px;
-		background: url('/signup.webp') center;
-		background-size: cover;
-	}
-
-	h1 {
-		text-align: left;
-		font-weight: 600;
-		font-size: 2.25rem;
-	}
-
-	h3 {
-		font-weight: 400;
-		font-size: 1.25rem;
-	}
-	input {
-		width: 70%;
-		border: 1px solid black;
-		background: none;
-		border-radius: 5px;
-		padding: 10px 20px 10px 15px;
-		font-size: 1rem;
-		margin: 5px 0 0 0;
-	}
-	button {
-		width: 70%;
-		border-radius: 5px;
-		padding: 10px 20px 10px 15px;
-		font-size: 1rem;
-		margin: 15px 0 0 0;
-		border: 1px solid black;
-		box-sizing: content-box;
-	}
-
-	.divider {
-		display: flex;
-		align-items: center;
-		width: calc(70% + 35px);
-		box-sizing: content-box;
-	}
-
-	.divider p {
-		margin: 20px;
-	}
-
-	.divide {
-		border: 1px solid black;
-		width: 100%;
-		height: 0px;
-	}
-
-	#back {
-		display: flex;
-		align-items: center;
-	}
-
-	.sso {
-		background: none;
-		color: black;
-	}
-
-	.sso:hover {
-		background-color: #e1f1a5;
-	}
-
-	@media screen and (max-width: 700px) {
-		main {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		}
-
-		.info {
-			display: none;
-		}
-
-		.data {
-			width: 100vw;
-		}
-
-		button,
-		input {
-			width: 100%;
-			box-sizing: border-box;
-		}
-
-		.divider {
-			width: 100%;
-		}
-	}
-</style>
