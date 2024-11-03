@@ -23,7 +23,7 @@
 			</p>
 		</div>
 		<div class="w-[600px] m-3 max-sm:w-full">
-			<img src="/office.jpg" class="rounded-2xl" alt="Office from Soty Ltd." />
+			<img src="/office.webp" class="rounded-2xl" alt="Office from Soty Ltd." />
 		</div>
 	</div>
 
