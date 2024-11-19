@@ -1,40 +1,6 @@
 <script>
 	import SEO from '$lib/components/SEO.svelte';
 	import NAV from '$lib/components/NAV.svelte';
-	// Array of paragraph texts
-	const paragraphs = [
-		'Private Cloud',
-		'Multi-cloud',
-		'Load Balancing',
-		'Networking',
-		'VPS',
-		'APIs',
-		'APIs',
-		'High Availability',
-		'Scalability',
-		'Microservices',
-		'Public Cloud',
-		'Security',
-		'Kubernetes',
-		'Hybrid Cloud',
-		'Automation',
-		'Containers',
-		'Virtualization',
-		'Infrastructure',
-		'Backup',
-		'Cloud Storage',
-		'Content Delivery Network',
-		'DevOps',
-		'Edge Computing',
-		'Deployment'
-	];
-
-	// Function to generate random positions for paragraphs
-	function getRandomPosition() {
-		const x = Math.random() * 90; // Random x position (0-90%)
-		const y = Math.random() * 90; // Random y position (0-90%)
-		return { x, y };
-	}
 
 	function getServerPing() {
 		const ping = Math.random() * 30;
